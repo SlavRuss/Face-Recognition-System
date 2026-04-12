@@ -31,6 +31,6 @@
 Запуск приложения
 
 - pip install -r requirements.txt
-- streamlit run streamlit_app.py
+- streamlit run test_without_db.py
 
 Приложение будет доступно по адресу: http://localhost:8501
