@@ -1,57 +1,43 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
 *.so
 .Python
-env/
+
 venv/
+env/
 ENV/
-env.bak/
 venv.bak/
 
-# Streamlit
-.streamlit/secrets.toml
-
-# Uploads and temp files
+images/*
 uploads/*
+test_image/*
+!.gitkeep
+!images/.gitkeep
 !uploads/.gitkeep
-temp_*.jpg
-temp_*.png
+!test_image/.gitkeep
 
-# Database credentials 
 db_config.py
-!db_config.example.py
+.env
+*.local
 
-# DeepFace models 
-~/.deepface/
-models/
+# Логи
+*.log
 
 # IDE
 .vscode/
 .idea/
 *.swp
-*.swo
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-logs/
+# DeepFace 
+~/.deepface/
+models/
 
-# Environment variables
-.env
-.env.local
-
-# Large files (если есть)
 *.h5
 *.pb
 *.ckpt
 *.pkl
-*.joblib
-
-# Test images 
-test_image/*.jpg
-!test_image/.gitkeep
