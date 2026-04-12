@@ -1,51 +1,31 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Virtual environments
-venv/
-env/
-.venv/
-
-# Distribution / packaging
+*.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Environments
-.env
-.venv
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Uploads and temp files
+uploads/*
+!uploads/.gitkeep
+temp_*.jpg
+temp_*.png
+
+# Database credentials 
+db_config.py
+!db_config.example.py
+
+# DeepFace models 
+~/.deepface/
+models/
 
 # IDE
 .vscode/
@@ -53,11 +33,25 @@ venv.bak/
 *.swp
 *.swo
 
-# OS generated files
+# OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Large files (если есть)
+*.h5
+*.pb
+*.ckpt
+*.pkl
+*.joblib
+
+# Test images 
+test_image/*.jpg
+!test_image/.gitkeep
